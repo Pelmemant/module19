@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form method="post">
+        {% crsf_method%}
+        <label for = name>Введите логин:</label>
+        <input type = 'text' id = 'name' name = 'name' maxlength="18" required>
+
+        <label for = password>Введите пароль:</label>
+        <input type = 'text' id = 'password' name = 'password' minlength="8" required>
+
+        <label for = r_password>Введите логин:</label>
+        <input type = 'text' id = 'r_password' name = 'r_password' minlength="8" required>
+
+        <label for = age>Введите логин:</label>
+        <input id = 'age' name = 'age' maxlength="3" required>
+
+        <button type="submit">Отправить</button>
+    </form>
+</body>
+</html>
